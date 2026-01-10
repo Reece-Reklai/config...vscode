@@ -117,7 +117,7 @@
     "when": "editorHasImplementationProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
   },
   {
-    "key": "ctrl+d",
+    "key": "ctrl+w",
     "command": "editor.action.revealDefinition"
   },
   {
@@ -463,7 +463,7 @@
     "when": "notebookEditorFocused && !inputFocus && activeEditor == 'workbench.editor.notebook'"
   },
   {
-    "key": "ctrl+w",
+    "key": "ctrl+b",
     "command": "workbench.action.gotoSymbol",
     "when": "!accessibilityHelpIsShown && !accessibleViewIsShown"
   },
@@ -1348,11 +1348,6 @@
   "command": "workbench.action.closeActiveEditor"
 },
 {
-  "key": "ctrl+shift+t",
-  "command": "search.action.openInEditor",
-  "when": "hasSearchResult && searchViewletFocus"
-},
-{
   "key": "alt+enter",
   "command": "-search.action.openInEditor",
   "when": "hasSearchResult && searchViewletFocus"
@@ -1390,10 +1385,6 @@
   "key": "ctrl+l",
   "command": "-extension.vim_navigateCtrlL",
   "when": "editorTextFocus && vim.active && vim.use<C-l> && !inDebugRepl"
-},
-{
-  "key": "ctrl+r",
-  "command": "redo"
 },
 {
   "key": "ctrl+y",
@@ -1700,22 +1691,12 @@
   "when": "editorFocus"
 },
 {
-  "key": "ctrl+b",
+  "key": "ctrl+m",
   "command": "workbench.action.toggleAuxiliaryBar"
 },
 {
   "key": "ctrl+alt+b",
   "command": "-workbench.action.toggleAuxiliaryBar"
-},
-{
-  "key": "ctrl+shift+b",
-  "command": "workbench.action.tasks.build",
-  "when": "taskCommandsRegistered"
-},
-{
-  "key": "ctrl+shift+b",
-  "command": "-workbench.action.tasks.build",
-  "when": "taskCommandsRegistered"
 },
 {
   "key": "ctrl+shift+backspace",
@@ -1736,5 +1717,36 @@
   "key": "shift+backspace",
   "command": "-extension.vim_shift+backspace",
   "when": "editorTextFocus && vim.active && vim.use<S-BS> && !inDebugRepl && vim.mode != 'Insert'"
+},
+{
+  "key": "ctrl+m",
+  "command": "-extension.vim_ctrl+m",
+  "when": "editorTextFocus && vim.active && vim.use<C-m> && !inDebugRepl || vim.active && vim.use<C-m> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-m> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
+},
+{
+  "key": "ctrl+m",
+  "command": "-editor.action.toggleTabFocusMode"
+},
+{
+  "key": "ctrl+d",
+  "command": "extension.vim_ctrl+d"
+},
+{
+  "key": "ctrl+shift+t",
+  "command": "search.action.openInEditor"
+},
+{
+  "key": "ctrl+r",
+  "command": "extension.vim_ctrl+r"
+},
+{
+  "key": "ctrl+pagedown",
+  "command": "-extension.vim_ctrl+pagedown",
+  "when": "editorTextFocus && vim.active && vim.use<C-pagedown> && !inDebugRepl"
+},
+{
+  "key": "ctrl+pageup",
+  "command": "-extension.vim_ctrl+pageup",
+  "when": "editorTextFocus && vim.active && vim.use<C-pageup> && !inDebugRepl"
 }
 ]
