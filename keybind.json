@@ -1,16 +1,6 @@
 [
   {
     "key": "ctrl+tab",
-    "command": "list.focusDown",
-    "when": "periscopeActive"
-  },
-  {
-    "key": "ctrl+shift+tab",
-    "command": "list.focusUp",
-    "when": "periscopeActive"
-  },
-  {
-    "key": "ctrl+tab",
     "command": "-workbench.action.quickOpenPreviousRecentlyUsedEditor",
     "when": "!inEditorsPicker"
   },
@@ -425,7 +415,7 @@
     "command": "editor.action.startFindReplaceAction"
   },
   {
-    "key": "ctrl+shift+]",
+    "key": "ctrl+]",
     "command": "editor.action.marker.next",
     "when": "editorFocus"
   },
@@ -435,7 +425,7 @@
     "when": "editorFocus"
   },
   {
-    "key": "ctrl+shift+[",
+    "key": "ctrl+[",
     "command": "editor.action.marker.prev",
     "when": "editorFocus"
   },
@@ -601,7 +591,7 @@
     "command": "-workbench.action.showCommands"
   },
   {
-    "key": "ctrl+[",
+    "key": "ctrl+9",
     "command": "workbench.action.quickOpenNavigatePreviousInFilePicker",
     "when": "inFilesPicker && inQuickOpen"
   },
@@ -1470,7 +1460,7 @@
     "when": "accessibleViewIsShown && accessibleViewCurrentProviderId == 'inlineCompletions'"
   },
   {
-    "key": "ctrl+]",
+    "key": "ctrl+0",
     "command": "selectNextSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
   },
@@ -1485,7 +1475,7 @@
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
   },
   {
-    "key": "ctrl+[",
+    "key": "ctrl+9",
     "command": "selectPrevSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
   },
@@ -1592,7 +1582,7 @@
     "when": "inSearchEditor || searchViewletFocus"
   },
   {
-    "key": "ctrl+]",
+    "key": "ctrl+0",
     "command": "workbench.action.quickOpenNavigateNextInEditorPicker",
     "when": "inEditorsPicker && inQuickOpen"
   },
@@ -1602,7 +1592,7 @@
     "when": "inEditorsPicker && inQuickOpen"
   },
   {
-    "key": "ctrl+]",
+    "key": "ctrl+0",
     "command": "workbench.action.quickOpenNavigateNextInFilePicker",
     "when": "inFilesPicker && inQuickOpen"
   },
@@ -1612,7 +1602,7 @@
     "when": "inFilesPicker && inQuickOpen"
   },
   {
-    "key": "ctrl+[",
+    "key": "ctrl+9",
     "command": "workbench.action.quickOpenNavigatePreviousInEditorPicker",
     "when": "inEditorsPicker && inQuickOpen"
   },
@@ -1645,7 +1635,7 @@
     "when": "viewContainer.workbench.view.extensions.enabled"
   },
   {
-    "key": "ctrl+shift+]",
+    "key": "ctrl+]",
     "command": "editor.action.marker.nextInFiles",
     "when": "editorFocus"
   },
@@ -1655,7 +1645,7 @@
     "when": "editorFocus"
   },
   {
-    "key": "ctrl+shift+[",
+    "key": "ctrl+[",
     "command": "editor.action.marker.prevInFiles",
     "when": "editorFocus"
   },
@@ -1887,5 +1877,82 @@
     "key": "alt+down",
     "command": "-list.focusAnyDown",
     "when": "listFocus && !inputFocus && !treestickyScrollFocused"
+  },
+  {
+    "key": "ctrl+shift+\\",
+    "command": "-editor.action.jumpToBracket",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+\\",
+    "command": "-workbench.action.terminal.focusTabs",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "ctrl+=",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "ctrl+=",
+    "command": "workbench.action.zoomIn"
+  },
+  {
+    "key": "ctrl+numpad_add",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "workbench.action.zoomOut"
+  },
+  {
+    "key": "ctrl+numpad_subtract",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "ctrl+shift+-",
+    "command": "-workbench.action.navigateForward",
+    "when": "canNavigateForward"
+  },
+  {
+    "key": "ctrl+9",
+    "command": "-workbench.action.lastEditorInGroup"
+  },
+  {
+    "key": "ctrl+0",
+    "command": "-workbench.action.focusSideBar"
+  },
+  {
+    "key": "ctrl+9",
+    "command": "quickInput.previous",
+    "when": "inQuickInput && quickInputType == 'quickPick' || inQuickInput && quickInputType == 'quickTree'"
+  },
+  {
+    "key": "up",
+    "command": "-quickInput.previous",
+    "when": "inQuickInput && quickInputType == 'quickPick' || inQuickInput && quickInputType == 'quickTree'"
+  },
+  {
+    "key": "ctrl+0",
+    "command": "quickInput.next",
+    "when": "inQuickInput && quickInputType == 'quickPick' || inQuickInput && quickInputType == 'quickTree'"
+  },
+  {
+    "key": "down",
+    "command": "-quickInput.next",
+    "when": "inQuickInput && quickInputType == 'quickPick' || inQuickInput && quickInputType == 'quickTree'"
+  },
+  {
+    "key": "f4",
+    "command": "-references-view.next",
+    "when": "reference-list.hasResult && references-view.canNavigate"
+  },
+  {
+    "key": "shift+f4",
+    "command": "-references-view.prev",
+    "when": "reference-list.hasResult && references-view.canNavigate"
   }
 ]
