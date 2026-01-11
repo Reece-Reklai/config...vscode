@@ -570,10 +570,6 @@
     "when": "inDebugRepl && textInputFocus"
   },
   {
-    "key": "ctrl+f",
-    "command": "editor.action.formatDocument"
-  },
-  {
     "key": "ctrl+k ctrl+alt+s",
     "command": "-git.stageSelectedRanges",
     "when": "editorTextFocus && !operationInProgress && resourceScheme == 'file'"
@@ -1635,18 +1631,8 @@
     "when": "viewContainer.workbench.view.extensions.enabled"
   },
   {
-    "key": "ctrl+]",
-    "command": "editor.action.marker.nextInFiles",
-    "when": "editorFocus"
-  },
-  {
     "key": "f8",
     "command": "-editor.action.marker.nextInFiles",
-    "when": "editorFocus"
-  },
-  {
-    "key": "ctrl+[",
-    "command": "editor.action.marker.prevInFiles",
     "when": "editorFocus"
   },
   {
@@ -1968,5 +1954,45 @@
   {
     "key": "ctrl+shift+f",
     "command": "workbench.action.files.openFolder"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "editor.action.formatDocument"
+  },
+  {
+    "key": "ctrl+shift+q",
+    "command": "workbench.action.toggleActivityBarVisibility"
+  },
+  {
+    "key": "ctrl+\\",
+    "command": "workbench.actions.view.problems",
+    "when": "workbench.panel.markers.view.active"
+  },
+  {
+    "key": "ctrl+shift+m",
+    "command": "-workbench.actions.view.problems",
+    "when": "workbench.panel.markers.view.active"
+  },
+  {
+    "key": "ctrl+down",
+    "command": "-problems.action.focusProblemsFromFilter",
+    "when": "problemsFilterFocus"
+  },
+  {
+    "key": "ctrl+.",
+    "command": "-problems.action.showQuickFixes",
+    "when": "problemFocus"
+  },
+  {
+    "key": "ctrl+]",
+    "command": "editor.action.marker.nextInFiles"
+  },
+  {
+    "key": "ctrl+[",
+    "command": "editor.action.marker.prevInFiles"
+  },
+  {
+    "key": "ctrl+shift+\\",
+    "command": "problems.action.focusFilter"
   }
 ]
