@@ -17,4 +17,6 @@ Enable both preview from workbench and preview text editor renaming
 
 Install Periscope extension is being used for fuzzy finding in three states: grep, files, current files
 
-Workbench Tab, show tab: none
+Workbench Tab, show tab: none 
+
+Occurrence Highlights: off
