@@ -1954,5 +1954,19 @@
     "key": "shift+f4",
     "command": "-references-view.prev",
     "when": "reference-list.hasResult && references-view.canNavigate"
+  },
+  {
+    "key": "ctrl+shift+f",
+    "command": "-workbench.view.search",
+    "when": "workbench.view.search.active && neverMatch =~ /doesNotMatch/"
+  },
+  {
+    "key": "ctrl+shift+f",
+    "command": "-workbench.action.terminal.searchWorkspace",
+    "when": "terminalFocus && terminalProcessSupported && terminalTextSelected"
+  },
+  {
+    "key": "ctrl+shift+f",
+    "command": "workbench.action.files.openFolder"
   }
 ]
