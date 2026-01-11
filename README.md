@@ -23,4 +23,4 @@ Occurrence Highlights: off
 
 Code action lightbulb: off
 
-Terminal Keeper Extension Installed
+Base16 Terminal Extension Installed
