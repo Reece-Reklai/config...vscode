@@ -1,3 +1,127 @@
+{
+  "C_Cpp.updateChannel": "Insiders",
+  "python.languageServer": "Pylance",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "java.project.importOnFirstTimeStartup": "automatic",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "code-runner.runInTerminal": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "vscode-edge-devtools.mirrorEdits": true,
+  "gitlens.advanced.messages": {
+    "suppressLineUncommittedWarning": true
+  },
+  "workbench.editorAssociations": {
+    "*.csv": "default"
+  },
+  "vscode-edge-devtools.webhint": false,
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      80
+    ],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "cmake.configureOnOpen": true,
+  "settingsSync.ignoredSettings": [
+    "-java.import.gradle.java.home"
+  ],
+  "settingsSync.ignoredExtensions": [
+    "ms-azuretools.vscode-azureresourcegroups"
+  ],
+  "githubPullRequests.pullBranch": "never",
+  "githubPullRequests.createOnPublishBranch": "never",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "git.confirmSync": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.accessibilitySupport": "off",
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "debug.onTaskErrors": "showErrors",
+  "[python]": {
+    "editor.formatOnType": true,
+  },
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "editor.dropIntoEditor.preferences": [],
+  "workbench.settings.openDefaultKeybindings": true,
+  "workbench.settings.openDefaultSettings": true,
+  "redhat.telemetry.enabled": true,
+  "vs-kubernetes": {
+    "vscode-kubernetes.helm-path-linux": "/home/reklai/.var/app/com.visualstudio.code/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm",
+    "vscode-kubernetes.kubectl-path-linux": "/home/reklai/.var/app/com.visualstudio.code/.local/state/vs-kubernetes/tools/kubectl/kubectl",
+    "vscode-kubernetes.minikube-path-linux": "/home/reklai/.var/app/com.visualstudio.code/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
+  },
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.cursorBlinking": "solid",
+  "editor.fontFamily": "SF Mono,Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontWeight": "normal",
+  "window.restoreFullscreen": true,
+  "workbench.productIconTheme": "macos-modern",
+  "workbench.iconTheme": "macos-modern-big-sur-icon-theme",
+  "editor.minimap.enabled": false,
+  "editor.inlineSuggest.experimental.emptyResponseInformation": false,
+  "editor.inlineSuggest.fontFamily": "'SF Mono', Menlo, Monaco, 'Courier New', monospace",
+  "workbench.editor.enablePreviewFromCodeNavigation": true,
+  "workbench.editor.showTabs": "none",
+  "workbench.editor.openPositioning": "left",
+  "workbench.editor.enablePreviewFromQuickOpen": true,
+  "zenMode.showTabs": "none",
+  "workbench.editor.splitInGroupLayout": "vertical",
+  "editor.occurrencesHighlight": "off",
+  "editor.lightbulb.enabled": "off",
+  "[go]": {
+    "editor.defaultFormatter": "golang.go",
+    "go.formatTool": "goimports",
+  },
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeLensFontFamily": "'SF Mono', Menlo, Monaco, 'Courier New', monospace",
+  "editor.inlayHints.fontFamily": "'SF Mono', Menlo, Monaco, 'Courier New', monospace",
+  "debug.console.fontFamily": "'SF Mono', Menlo, Monaco, 'Courier New', monospace",
+  "scm.inputFontFamily": "'SF Mono', Menlo, Monaco, 'Courier New', monospace",
+  "terminal.integrated.fontFamily": "sf mono, Menlo, Monaco, 'Courier New', monospace",
+  "notebook.markup.fontFamily": "'SF Mono', Menlo, Monaco, 'Courier New', monospace",
+  "notebook.output.fontFamily": "'SF Mono', Menlo, Monaco, 'Courier New', monospace",
+  "chat.editor.fontFamily": "'SF Mono', Menlo, Monaco, 'Courier New', monospace",
+  "chat.fontFamily": "'SF Mono', Menlo, Monaco, 'Courier New', monospace",
+  "window.menuBarVisibility": "compact",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontWeightBold": "bold",
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "C_Cpp.copilotHover": "disabled",
+  "github.copilot.chat.agent.currentEditorContext.enabled": false,
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "workbench.editor.enablePreview": false,
+  "window.newWindowProfile": "Default",
+  // vim keybinds
   "vim.leader": " ",
   "vim.autoindent": true,
   "vim.hlsearch": true,
@@ -16,3 +140,4 @@
       ]
     },
   ],
+}
