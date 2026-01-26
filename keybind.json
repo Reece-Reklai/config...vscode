@@ -774,7 +774,7 @@
     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceReadonly && !inputFocus"
   },
   {
-    "key": "ctrl+shift+k",
+    "key": "ctrl+k",
     "command": "editor.action.showHover",
     "when": "editorTextFocus"
   },
@@ -1304,7 +1304,7 @@
     "when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated || terminalEditorFocus && terminalFocus && terminalProcessSupported"
   },
   {
-    "key": "ctrl+k",
+    "key": "ctrl+shift+k",
     "command": "workbench.action.closeActiveEditor"
   },
   {
@@ -2110,5 +2110,9 @@
     "key": "alt+right",
     "command": "-workbench.action.terminal.focusNextPane",
     "when": "terminalFocus && terminalHasBeenCreated && terminalSplitPaneActive || terminalFocus && terminalProcessSupported && terminalSplitPaneActive"
+  },
+  {
+    "key": "ctrl+shift+h",
+    "command": "-workbench.action.replaceInFiles"
   }
 ]
