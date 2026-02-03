@@ -60,9 +60,9 @@
       "source.organizeImports": "explicit"
     },
     "editor.defaultFormatter": "charliermarsh.ruff",
-    "python.languageServer": "Pylance",
-    "python.analysis.typeCheckingMode": "strict"
   },
+  "python.languageServer": "Pylance",
+  "python.analysis.typeCheckingMode": "strict",
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
@@ -95,8 +95,8 @@
   "editor.lightbulb.enabled": "off",
   "[go]": {
     "editor.defaultFormatter": "golang.go",
-    "go.formatTool": "goimports",
   },
+  "go.formatTool": "goimports",
   "editor.formatOnType": true,
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
@@ -124,7 +124,6 @@
   "github.copilot.chat.agent.currentEditorContext.enabled": false,
   "workbench.secondarySideBar.defaultVisibility": "hidden",
   "workbench.editor.enablePreview": false,
-  "window.newWindowProfile": "Default",
   // vim keybinds
   "vim.leader": " ",
   "vim.autoindent": true,
@@ -150,5 +149,5 @@
   "editor.pasteAs.enabled": false,
   "editor.overtypeOnPaste": false,
   "editor.pasteAs.preferences": [],
-  "python.analysis.typeCheckingMode": "basic",
+  "window.newWindowProfile": "Default",
 }
